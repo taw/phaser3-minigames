@@ -41,8 +41,8 @@ class CreateNewGame
   }
 }
 
-let size_x = window.innerWidth;
-let size_y = window.innerHeight;
+let size_x = window.innerWidth
+let size_y = window.innerHeight
 let game = new Phaser.Game({
   type: Phaser.AUTO,
   backgroundColor: "#f88",

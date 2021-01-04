@@ -45,6 +45,7 @@ class MainScene extends Phaser.Scene {
       gravityY: 200,
       gravityX: 0,
       alpha: {min: 0.5, max: 0.8},
+      rotate: {min: -1000, max: 1000},
     });
 
     this.emitter.emitParticle(10, this.cookie.x, this.cookie.y)
