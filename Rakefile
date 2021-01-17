@@ -49,7 +49,7 @@ let game = new Phaser.Game({
   width: size_x,
   height: size_y,
   scene: MainScene,
-});
+})
 ')
   end
 
