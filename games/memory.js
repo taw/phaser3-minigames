@@ -1,6 +1,7 @@
 let shuffle = function(a) {
-  var i, j, t
-  i = a.length
+  a = [...a]
+  let i = a.length
+  let j, t
   while (--i > 0) {
     j = ~~(Math.random() * (i + 1))
     t = a[j]
@@ -154,8 +155,7 @@ class GameScene extends Phaser.Scene {
 
 class MenuScene extends Phaser.Scene {
   preload() {
-    var i, k
-    for (i = 1; i <= 20; i++) {
+    for (let i = 1; i <= 20; i++) {
       this.load.image(`cat${i}`, `../images/cat_images/cat${i}.png`)
     }
     this.load.audio("meow", "../audio/cat_meow.mp3")
